@@ -1,17 +1,18 @@
 # Task 3 - Terraform Docker Container
 
 ## Objective
-Provision a local Nginx Docker container using Terraform.
+Provision a local Docker container (Nginx) using Terraform.
 
-## Tools
+## Tools Used
 - Terraform
 - Docker Desktop (Windows)
 - VS Code
 
 ## Files
-- `main.tf`: Terraform config
-- `execution_log.txt`: Terminal logs
-- `screenshots/`: Task verification screenshots
+- `main.tf`: Terraform code
+- `execution_log.txt`: Logs of Terraform commands
+- `screenshots/`: Evidence of working container
+- `README.md`: Project overview
 
 ## Commands Used
 terraform init
@@ -22,10 +23,7 @@ terraform destroy
 
 
 ## Output
-Hosted Nginx page at http://localhost:8080 successfully.
+Hosted Nginx page successfully on [http://localhost:8080](http://localhost:8080)
 
-## Cleanup
-Resources destroyed using `terraform destroy`.
-
-## Submission
-Repo link submitted as part of the internship evaluation.
+## Clean-up
+Destroyed all resources after testing using `terraform destroy`.
