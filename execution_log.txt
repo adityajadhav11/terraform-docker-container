@@ -1,0 +1,42 @@
+# Task 3 - Terraform Execution Log
+
+## 1. terraform init
+
+Initializing the backend...
+Initializing provider plugins...
+- Finding kreuzwerker/docker versions matching "~> 2.13.0"...
+- Installing kreuzwerker/docker v2.13.0...
+- Installed kreuzwerker/docker v2.13.0 (self-signed, key ID ...)
+Terraform has been successfully initialized!
+
+## 2. terraform plan
+
+Terraform will perform the following actions:
+  # docker_image.nginx_image will be created
+  # docker_container.nginx_container will be created
+Plan: 2 to add, 0 to change, 0 to destroy.
+
+## 3. terraform apply
+
+Do you want to perform these actions?
+  Enter a value: yes
+
+docker_image.nginx_image: Creation complete after 13s
+docker_container.nginx_container: Creation complete after 3s
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+
+## 4. terraform state list
+
+docker_container.nginx_container
+docker_image.nginx_image
+
+## 5. terraform destroy
+
+Do you really want to destroy all resources?
+  Enter a value: yes
+
+docker_container.nginx_container: Destroying...
+docker_container.nginx_container: Destruction complete
+docker_image.nginx_image: Destroying...
+docker_image.nginx_image: Destruction complete
+Destroy complete! Resources: 2 destroyed.
