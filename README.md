@@ -16,9 +16,13 @@ Provision a local Docker container (Nginx) using Terraform.
 
 ## Commands Used
 terraform init
+
 terraform plan
+
 terraform apply
+
 terraform state list
+
 terraform destroy
 
 
